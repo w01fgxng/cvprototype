@@ -1,34 +1,114 @@
-.MainContainer{
+.MainContainer {
     background-color: #212529;
     position: absolute;
-    top:0px;
+    top: 0px;
     left: 0px;
     height: 100vh;
     width: 100%;
-    overflow:hidden;
-    .LeftContainer{
-        background-color: yellowgreen;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    .LeftContainer {
         width: 3%;
-        height: 95%;
+        height: 100%;
         display: flex;
         align-items: center;
-        justify-content: left;
+        flex-direction: column;
+        justify-content: space-between;
+        .IconContainer1 {
+            background-color: #6eeb83;
+            height: 5%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            .IconMenu{
+                width: 50%;
+                height: 50%;
+            }
+        }
+        .IconContainer2 {
+            color: whitesmoke;
+            height: 88%;
+            width: 100%;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            .Icon {
+                color: #6eeb83;
+                height:5%;
+                width: 100%;
+                
+            }
+            
+            
+    
+            
+        }
+        .IconContainer3 {
+            background-color: #6eeb83;
+            height: 5%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .IconDescarga{
+                height: 50%;
+                width: 50;
+            }
+        }
     }
-    .PhotoContainer{
+    .PhotoContainer {
         position: relative;
-        width: 1%;
+        width: 42%;
         height: 100%;
-        padding-left: 100%;
-    }
-    .TextContainer{
         display: flex;
-        width: 66%;
+        align-items: center;
+        .img {
+            width: 100%;
+            height: 100%;
+        }
     }
-
-
-
-
-
-
-
+    .TextContainer {
+        display: flex;
+        width: 50%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .About {
+            height: 40%;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .Services {
+            height: 60%;
+            width: 100%;
+            .Title {
+                height: 10%;
+                color: aliceblue;
+            }
+            .SkillCon {
+                height: 45%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .Skills {
+                    color: white;
+                    height: 100%;
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
 }
